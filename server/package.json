@@ -1,0 +1,23 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./src/server.js",
+    "scripts": {
+        "dev": "nodemon ./src/server",
+        "start": "node ./src/server",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ../client && npm run build --prefix ../client"
+    },
+    "keywords": [],
+    "author": "constWardtz",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "mongoose": "^5.10.14"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
+}
