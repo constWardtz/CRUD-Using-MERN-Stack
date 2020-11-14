@@ -35,8 +35,6 @@ const DeleteBook = async(_id) => {
 }
 
 
-
-
 module.exports = {
     Create,
     Retrieve,
