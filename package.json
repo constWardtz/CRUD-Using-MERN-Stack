@@ -10,10 +10,10 @@
     },
     "scripts": {
         "client-install": "yarn install --prefix client",
-        "dev": "nodemon server.js",
+        "server": "nodemon server.js",
         "start": "node server.js",
-        "client": "yarn start --prefix client",
-        "build": "concurrently 'yarn run server' 'yarn run client'",
+        "build": "yarn start --prefix client",
+        "dev": "concurrently 'yarn run server' 'yarn run client'",
         "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn install --prefix client && yarn run build --prefix client"
     },
     "keywords": [],
