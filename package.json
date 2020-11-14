@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "main": "server.js",
+    "engines": {
+        "node": "12.x"
+    },
     "scripts": {
         "client-install": "npm install --prefix client",
         "dev": "nodemon server.js",
