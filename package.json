@@ -9,11 +9,11 @@
         "yarn": "1.x"
     },
     "scripts": {
-        "client-install": "npm install --prefix client",
+        "client-install": "yarn install --prefix client",
         "dev": "nodemon server.js",
         "start": "node server.js",
-        "client": "npm start --prefix client",
-        "heroku-postbuild": "ng build --prod"
+        "client": "yarn start --prefix client",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn install --prefix client && yarn run build --prefix client"
     },
     "keywords": [],
     "author": "constWardtz",
